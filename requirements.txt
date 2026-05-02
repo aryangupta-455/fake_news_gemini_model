@@ -1,0 +1,9 @@
+gradio
+google-generativeai
+langchain
+langchain-google-genai
+langchain-tavily
+beautifulsoup4
+nltk
+python-dotenv
+matplotlib
