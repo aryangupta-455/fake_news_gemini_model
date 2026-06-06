@@ -109,58 +109,63 @@ The models were evaluated using:
 * Classification Report
 
 ---
-# 🔄 Workflow of the Comparison System
+# Workflow of the Comparison System
 
+```text
                     FAKE NEWS DETECTION PROJECT
 
- ┌──────────────────────────────┐
- │      Approach 1 : BERT       │
- └──────────────┬───────────────┘
-                │
-                ▼
+
+┌──────────────────────────────┐
+│      Approach 1 : BERT       │
+└──────────────┬───────────────┘
+               │
+               ▼
       Dataset Preprocessing
-                │
-                ▼
+               │
+               ▼
        Fine-Tuning BERT Model
-                │
-                ▼
+               │
+               ▼
         Fake / Real Prediction
-                │
-                ▼
+               │
+               ▼
          Performance Evaluation
-     (Accuracy, Precision, Recall,
-              F1-score)
+   (Accuracy, Precision, Recall,
+             F1-score)
 
 
 
- ┌──────────────────────────────┐
- │    Approach 2 : Gemini LLM   │
- └──────────────┬───────────────┘
-                │
-                ▼
+┌──────────────────────────────┐
+│    Approach 2 : Gemini LLM   │
+└──────────────┬───────────────┘
+               │
+               ▼
         User News Text Input
-                │
-                ▼
-      Zero-Shot Prompting
-                │
-                ▼
+               │
+               ▼
+       Zero-Shot Prompting
+               │
+               ▼
       Gemini LLM Classification
-                │
-                ▼
-     Fake / Real + Explanation
-                │
-                ▼
+               │
+               ▼
+      Fake / Real + Explanation
+               │
+               ▼
          Performance Evaluation
-     (Accuracy, Precision, Recall,
-              F1-score)
+   (Accuracy, Precision, Recall,
+             F1-score)
 
 
 
- ┌──────────────────────────────┐
- │      Comparative Analysis    │
- └──────────────────────────────┘
-      BERT vs Gemini Results
-      Accuracy vs Explainability
+┌──────────────────────────────┐
+│      Comparative Analysis    │
+└──────────────────────────────┘
+
+• BERT vs Gemini Results
+• Accuracy vs Explainability
+• Performance Trade-offs
+```
 
 # 🎯 Project Objective
 
