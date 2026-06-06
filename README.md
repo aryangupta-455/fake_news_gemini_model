@@ -109,16 +109,58 @@ The models were evaluated using:
 * Classification Report
 
 ---
+# 🔄 Workflow of the Comparison System
 
-# 🔄 System Workflow
+                    FAKE NEWS DETECTION PROJECT
 
-1. User enters news text
-2. Input is processed by both models independently
-3. BERT performs binary classification
-4. Gemini performs zero-shot classification and generates explanation
-5. Outputs are evaluated and compared
+ ┌──────────────────────────────┐
+ │      Approach 1 : BERT       │
+ └──────────────┬───────────────┘
+                │
+                ▼
+      Dataset Preprocessing
+                │
+                ▼
+       Fine-Tuning BERT Model
+                │
+                ▼
+        Fake / Real Prediction
+                │
+                ▼
+         Performance Evaluation
+     (Accuracy, Precision, Recall,
+              F1-score)
 
----
+
+
+ ┌──────────────────────────────┐
+ │    Approach 2 : Gemini LLM   │
+ └──────────────┬───────────────┘
+                │
+                ▼
+        User News Text Input
+                │
+                ▼
+      Zero-Shot Prompting
+                │
+                ▼
+      Gemini LLM Classification
+                │
+                ▼
+     Fake / Real + Explanation
+                │
+                ▼
+         Performance Evaluation
+     (Accuracy, Precision, Recall,
+              F1-score)
+
+
+
+ ┌──────────────────────────────┐
+ │      Comparative Analysis    │
+ └──────────────────────────────┘
+      BERT vs Gemini Results
+      Accuracy vs Explainability
 
 # 🎯 Project Objective
 
